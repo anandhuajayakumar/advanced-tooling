@@ -15,6 +15,12 @@ li.active{
 .fh5co-service{
 	box-shadow:1px 1px 1px 1px #64B5F6 !important;
 }
+.fh5co-service a :hov{
+	color:blue !important;
+}
+.fh5co-service a :active{
+	color:#63b2f6 !important;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -504,6 +510,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fh5co-service img {
   margin-bottom: 20px;
+  max-width:200px;
+  margin-top:10%;
 }
 
 /* Icon pentagon */
