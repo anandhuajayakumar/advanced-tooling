@@ -141,21 +141,3 @@
 
 
 }());
-
-
-    var v1=$("#comp1").css("height");
-    var v2=$("#comp2").css("height");
-    var v3=$("#comp3").css("height");
-	var m=v1>v2?(v1>v3?v1:v3):(v2>v3?v2:v3);
-	if(window.innerWidth>990)
-	{
-		$("#comp1").css("height",m);
-		$("#comp2").css("height",m);
-		$("#comp3").css("height",m);
-	}
-	else
-	{
-		$("#comp1").css("height",v1*1.5);
-		$("#comp2").css("height",v2*1.5);
-		$("#comp3").css("height",v3*1.5);
-	}
