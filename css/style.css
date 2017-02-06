@@ -1,3 +1,7 @@
+li.active{
+	color:#FF5126 !important;
+	background-color:#000;
+}
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?stsype");
