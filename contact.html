@@ -74,6 +74,10 @@
 							</div>
 						</div>
 						<div class="row">
+							<div id="map">
+							</div>
+						</div>
+						<div class="row">
 							<div class="col-md-12">
 								<div class="fh5co-copyright">
 									<p class="pull-left">Copyright &copy; Advanced Tooling & Engineering. All rights reserved.</p>
@@ -88,9 +92,27 @@
 		<div class="gototop js-top">
 			<a href="#top"><i class="">v</i></a>
 		</div>
+		<script>
+			function myMap() {
+				var mapCanvas = document.getElementById("map");
+				var myCenter = new google.maps.LatLng(33.875900,-118.034982); 
+				var mapOptions = {center: myCenter, zoom:15 };
+				var map = new google.maps.Map(mapCanvas,mapOptions);
+				var marker = new google.maps.Marker({
+					position: myCenter,
+					animation: google.maps.Animation.BOUNCE
+				});
+				marker.setMap(map);
+				var infowindow = new google.maps.InfoWindow({
+					content: "17109 Edwards Rd, Cerritos, California 90703, United States"
+				});
+				infowindow.open(map,marker);
+			}
+		</script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>	
 	</body>
 </html>
